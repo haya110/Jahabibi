@@ -1,0 +1,59 @@
+/* ==================== SHARED UTILITY STYLES ==================== */
+/* This file complements global.css for any page-specific overrides */
+
+.dashboard-section {
+    background-color: var(--light-bg);
+    min-height: 100vh;
+    padding: 3rem 0;
+}
+
+.dashboard-wrapper {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 0 1.5rem;
+}
+
+.welcome-header {
+    font-size: 2.5rem;
+    margin-bottom: 2rem;
+    font-family: 'Feeling Passionate', cursive;
+    color: var(--text-dark);
+}
+
+/* Alert variants */
+.alert-success {
+    background-color: var(--success-light);
+    color: var(--success);
+    padding: 1rem 1.25rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    border-radius: var(--radius);
+    font-weight: 600;
+    border: 1px solid rgba(5, 150, 105, 0.2);
+}
+
+/* Empty state */
+.empty-orders {
+    text-align: center;
+    padding: 3rem 2rem;
+    background: var(--white);
+    border-radius: var(--radius-lg);
+    margin-top: 1.25rem;
+    border: 2px dashed var(--border-color);
+}
+
+.empty-orders a {
+    color: var(--primary-color);
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .welcome-header {
+        font-size: 2rem;
+    }
+    .dashboard-wrapper {
+        padding: 0 1rem;
+    }
+}
